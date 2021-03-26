@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta property="og:image" content="images/preview.jpg" />
+    <meta property="og:image" content="https://cyberpun.ga/no_importa.html/images/preview.jpg" />
     <title>no_importa.html</title>
     <style>
       @font-face {
@@ -36,7 +36,7 @@
         display: flex;
       }
 
-      .parrafo {
+      p {
         margin: auto auto;
         font-family: "Press Start 2P", cursive;
         font-size: 24px;
@@ -48,12 +48,12 @@
         border: #101010 4px solid;
       }
 
-      .error {
+      span {
         font-family: "Press Start 2P", cursive;
         color: blue;
       }
 
-      .boton {
+      button {
         display: block;
         margin-top: 16px;
         font-family: "Press Start 2P", cursive;
@@ -75,17 +75,13 @@
         const contenedor = document.createElement("div");
         const parrafo = document.createElement("p");
         const boton = document.createElement("button");
-        boton.classList.add("boton");
         boton.innerHTML = "No importa";
         boton.addEventListener("click", function () {
-          console.log("lala");
           document.body.removeChild(contenedor);
         });
-        parrafo.classList.add("parrafo");
         contenedor.appendChild(parrafo);
         const error = document.createElement("span");
         error.innerText = errores[Math.floor(Math.random() * errores.length)];
-        error.classList.add("error");
         parrafo.innerHTML = "Hay viejos culiaos que no creen que en un poema se pueda decir: ";
         parrafo.appendChild(error);
         parrafo.appendChild(boton);
