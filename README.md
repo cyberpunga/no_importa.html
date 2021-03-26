@@ -1,3 +1,3 @@
 # no_importa
 
-This is cyberpunga's take on redolés' "no importa" using vanilla web code.
+mauricio redolés meets vanilla html, css and javascript.
